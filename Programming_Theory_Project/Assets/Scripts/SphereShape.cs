@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-public class SphereShape : Shape
+public class SphereShape : Shape // INHERITANCE
 {
     private void Awake()
     {
@@ -12,7 +12,8 @@ public class SphereShape : Shape
 
     public override void DisplayText()
     {
-        form.text = "'DisplayText' in 'SphereShape' object";
+        // POLYMORPHISM
+        form.text = "Wow: you've clicked sphere shape. Good job!!! ";
     }
 
 }

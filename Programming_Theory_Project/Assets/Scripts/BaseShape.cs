@@ -11,11 +11,13 @@ public class Shape : MonoBehaviour
 
     public virtual void DisplayText()
     {
-        Debug.Log("Base is clicked");
+        // ABSTRACTION
+        form.text = "'DisplayText' in " + Name + " object";
     }
 
     public string Name
     {
+        // ENCAPSULATION
         get
         {
             return _name;
