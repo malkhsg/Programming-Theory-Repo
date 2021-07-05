@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Shape : MonoBehaviour
+public abstract class Shape : MonoBehaviour
 {
     [SerializeField]
     protected Text form;
@@ -11,9 +11,10 @@ public class Shape : MonoBehaviour
 
     public virtual void DisplayText()
     {
-        // ABSTRACTION
         form.text = "'DisplayText' in " + Name + " object";
     }
+
+    public abstract void OnClicked(); // ABSTRACTION
 
     public string Name
     {

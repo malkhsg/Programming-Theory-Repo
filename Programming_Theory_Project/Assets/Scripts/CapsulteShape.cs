@@ -8,4 +8,9 @@ public class CapsulteShape : Shape // INHERITANCE
     {
        Name = "CapsuleShape";
     }
+
+    public override void OnClicked()
+    {
+        //TODO
+    }
 }

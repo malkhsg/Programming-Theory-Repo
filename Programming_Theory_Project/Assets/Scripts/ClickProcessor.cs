@@ -9,6 +9,7 @@ public class ClickProcessor : MonoBehaviour
         var shape = GetComponent<Shape>();
         if (shape != null)
         {
+            shape.OnClicked();
             shape.DisplayText();
         }
     }

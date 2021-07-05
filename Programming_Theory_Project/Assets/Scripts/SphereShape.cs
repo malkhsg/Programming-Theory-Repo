@@ -16,4 +16,9 @@ public class SphereShape : Shape // INHERITANCE
         form.text = "Wow: you've clicked sphere shape. Good job!!! ";
     }
 
+    public override void OnClicked()
+    {
+        //TODO
+    }
+
 }
